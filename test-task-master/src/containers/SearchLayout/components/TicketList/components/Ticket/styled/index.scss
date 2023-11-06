@@ -1,0 +1,106 @@
+.ticket {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0.1rem 0.4rem rgba(91, 137, 164, 0.25);
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  display: flex;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+
+  @media only screen and (min-width: 76.8rem) {
+    flex-wrap: no-wrap;
+    height: 161px;
+  }
+
+  &__time {
+    color: var(--primaryGray);
+    font-family: var(--opensans);
+    font-size: 2rem;
+    line-height: 2.6rem;
+    @media only screen and (min-width: 76.8rem) {
+      font-size: 3.2rem;
+    }
+  }
+  &__location {
+    color: var(--primaryGray);
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.5rem 0 0;
+  }
+  &__date {
+    color: var(--secondaryGray);
+    font-size: 1.1rem;
+  }
+  &__col-buy {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2.5rem 1.8rem;
+    border-right: 1px solid var(--complementaryGray);
+
+    @media only screen and (min-width: 480px) {
+      justify-content: space-between;
+    }
+
+    @media only screen and (min-width: 768px) {
+      width: 20rem;
+      justify-content: center;
+    }
+
+
+  }
+  &__content {
+    padding: 2.3rem 2rem;
+    width: 100%;
+    display: inline-flex;
+    position: relative;
+    @media only screen and (min-width: 768px) {
+      width: calc(100% - 20rem);
+    }
+  }
+  &__price {
+    display: inline-block;
+    width: 100%;
+
+  }
+}
+
+.fly {
+  position: absolute;
+  width: 11.4rem;
+  top: 3.7rem;
+  left: 50%;
+  margin-left: -5.7rem;
+  display: none;
+
+  @media only screen and (min-width: 48rem) {
+    display: block;
+  }
+  &__line {
+    content: '';
+    position: absolute;
+    width: 9.6rem;
+    height: 0.1rem;
+    background: var(--lightGray);
+  }
+  &__title {
+    color: var(--secondaryGray);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-left: 1.6rem;
+    position: relative;
+    top: -1.6rem;
+  }
+  &__icon {
+    position: absolute;
+    width: 1.4rem;
+    height: 1.4rem;
+    top: -0.65rem;
+    right: 0;
+    transform: rotate(90deg);
+  }
+}

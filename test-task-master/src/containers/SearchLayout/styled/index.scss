@@ -1,0 +1,33 @@
+.searchLayout {
+  display: flex;
+  flex-direction: column;
+
+  &__aside {
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    box-shadow: 0 0.1rem 0.4rem rgba(115, 119, 238, 0.25);
+    border-radius: 0.5rem;
+    background-color: var(--white);
+    margin-right: 1rem;
+    vertical-align: top;
+    padding: 1.5rem 0;
+    margin-bottom: 3rem;
+
+    @media only screen and (min-width: 768px) {
+      width: 23.2rem;
+      margin-bottom: 0;
+    }
+
+  }
+  &__content {
+    width: 100%;
+    display: inline-flex;
+
+    @media only screen and (min-width: 768px) {
+      width: calc(100% - 24.2rem);
+
+    }
+
+  }
+}

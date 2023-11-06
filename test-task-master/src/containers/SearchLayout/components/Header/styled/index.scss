@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  justify-content: center;
+
+  &__logo {
+
+    width: 7.8rem;
+    height: 8.5rem;
+    cursor: pointer;
+    margin: 5rem 0 3.6rem;
+    background: url("../../../../../img/logo-app.svg") 0 0 no-repeat;
+  }
+}
